@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.W Facas Artesanais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/AW.css">
+</head>
+
+<body>
+    <header> 
+        <nav aria-label="Cabeçalho"> <!-- seção de navegação -->
+            <img src="img/logotipo.jpg" alt="A.W Facas Artesanais">
+            <ul> <!-- lista sem ordenação-->
+                <li><a href="#destaque">Destaque</a></li>
+                <li><a href="#produtos">Catalogo</a></li>
+                <li><a href="#fabricação">Fabricação</a></li>
+                <li><a href="#materiais">Tipo de materiais</a></li>
+                <li><a href="#sobre">Sobre a A.W</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <nav class="icones-cabeçalho"> <!-- Utilizado com folhas de estilo na
+                especificação de blocos e texto.  -->
+            <ul>
+                <li><a href="#" title="Busca"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="#" title="Login"><ion-icon name="person-circle-outline"></ion-icon></a></li>
+                <li><a href="#" title="Carrinho"><ion-icon name="cart-outline"></ion-icon></a></li>
+            </ul>
+            </nav>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destaque"> <!-- Define uma seção genérica no documento -->
+            <h2 class="section-opcoes">Mais vendidos</h2>
+            <div id="Carrossel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Canivete-damasco-03-Copia.jpg" class="d-block w-100" alt="Canivete de Damasco">
+                        <div class="carousel-caption-box">
+                            <h5>Canivete de damasco</h5>
+                            <h4>R$: 1.890,00 no Pix</h4>
+                            <p>R$: 1.999,00 no cartão de debito</p>
+                            <p>ou até 6x sem juros no cartão de credito</p>
+                            <button type="submit" class="btn-primary">Adicionar ao Carrinho <ion-icon name="cart-outline"></ion-icon> </button>
+                            <button type="submit" class="btn-primary">Comprar <ion-icon name="bag-check-outline"></ion-icon> </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Canivete-de-inox-Copia.jpg" class="d-block w-100" alt="Canivete de Inox">
+                        <div class="carousel-caption-box">
+                            <h5>Canivete de inox</h5>
+                            <h4>R$: 250,00 no pix</h4>
+                            <p>R$: 280,00 no cartão de debito</p>
+                            <p>ou até 3x sem juros no cartão de crédito</p>
+                            <button type="submit" class="btn-primary">Adicionar ao Carrinho <ion-icon name="cart-outline"></ion-icon> </button>
+                            <button type="submit" class="btn-primary">Comprar <ion-icon name="bag-check-outline"></ion-icon> </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Cutelo-de-Carbono-Copia.jpg" class="d-block w-100" alt="Cutelo de Carbono">
+                        <div class="carousel-caption-box">
+                            <h5>Cutelo de carbono</h5>
+                            <h4>R$: 450,00 no pix</h4>
+                            <p>R$: 499,00 no cartão de debito </p>
+                            <p>ou até 5x sem juros no cartão de crédito</p>
+                            <button type="submit" class="btn-primary">Adicionar ao Carrinho <ion-icon name="cart-outline"></ion-icon> </button>
+                            <button type="submit" class="btn-primary">Comprar <ion-icon name="bag-check-outline"></ion-icon> </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#Carrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Carrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <h2 class="section-opcoes">Nosso catalogo</h2>
+            <div class="faca-lista">
+                <article class="facas-item"> <!-- conteúdo independente e autocontido -->
+                    <img src="img/Canivete-damasco-03.jpg" alt="Canivete de damasco" data-bs-toggle="modal"
+                        data-bs-target="#Primeiro-modal">
+                    <h3>Canivete aço damasco</h3>
+                    <h5>R$: 2.150,00 </h5>
+                    <h4>R$: 1.890,00 no Pix</h4>
+                    <p>R$ 1.999,00 no cartão de debito</p>
+                    <p>ou até 6x sem juros no cartão de crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Canivete-de-inox.jpg" alt="Canivete de inox">
+                    <h3>Canivete aço inox</h3>
+                    <h5>R$: 299,00 </h5>
+                    <h4> R$: 250,00 no pix</h4>
+                    <p>R$ 280,00 no cartão de debito</p>
+                    <p>ou até 3x sem juros no cartão de crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Cutelo-de-Carbono.jpg" alt="Cutelo de carbono">
+                    <h3>Cutelo aço carbono.</h3>
+                    <h5>R$: 525,00 </h5>
+                    <h4>R$: 450,00 no pix</h4>
+                    <p>R$ 499,00 no cartão de debito</p>
+                    <p>ou até 5x sem juros no cartão de crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Espada-de-damasco.jpg" alt="Espada de damasco">
+                    <h3>Espada aço damasco</h3>
+                    <h5>R$: 34.900,00</h5>
+                    <h4>R$: 31.900,00 no Pix</h4>
+                    <p>R$ 32.900,00 no cartão de debito</p>
+                    <p>ou até 12x juros no cartão de Crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Facão-de-Carbono.jpg" alt="Facão de carbono">
+                    <h3>Facão aço carbono</h3>
+                    <h5>R$: 799,00</h5>
+                    <h4>R$:699,00 no Pix</h4>
+                    <p>R$ 750,00 no cartão de debito</p>
+                    <p>ou até 6x sem juros no cartão de Crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Faca-de-Inox.jpg" alt="Faca de inox">
+                    <h3>Faca aço inox</h3>
+                    <h5>R$: 399,00 </h5>
+                    <h4>R$: 350,00 no Pix</h4>
+                    <p>R$ 380,00 no cartão de debito</p>
+                    <p>ou 3x sem juros no cartão de Crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Faca-aço-carbono-02.jpg" alt="Faca de carbono">
+                    <h3>Faca aço carbono</h3>
+                    <h5>R$: 1800,00 </h5>
+                    <h4>R$: 1650,00 no Pix</h4>
+                    <p>R$ 1700,00 no cartão de debito</p>
+                    <p>ou 3x sem juros no cartão de Crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/chef-de-inox.jpg" alt="chef de inox">
+                    <h3>Faca do chefe</h3>
+                    <h5>R$: 280,00 </h5>
+                    <h4>R$: 250,00 no Pix</h4>
+                    <p>R$ 360,00 no cartão de debito</p>
+                    <p>ou 3x sem juros no cartão de Crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+
+                <article class="facas-item">
+                    <img src="img/Faca-aço-inox02.jpg" alt="Faca de inox">
+                    <h3>Faca aço inox</h3>
+                    <h5>R$: 2800,00 </h5>
+                    <h4>R$: 2450,00 no Pix</h4>
+                    <p>R$ 2600,00 no cartão de debito</p>
+                    <p>ou 3x sem juros no cartão de Crédito</p>
+                    <ion-icon class="icones" name="card-outline"></ion-icon>
+                    <ion-icon class="icones" name="cash-outline"></ion-icon>
+                </article>
+            </div>
+        </section>
+
+        <div class="modal fade" id="Primeiro-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="Carrossel-Exemplos" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Canivete-damasco-01.jpg" alt="Canivete de damasco">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Canivete-damasco-02.jpg" alt="Canivete de damasco">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Canivete-damasco-04.jpg" alt="Canivete de damasco">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#Carrossel-Exemplos"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#Carrossel-Exemplos"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <h3>Canivete aço damasco</h3>
+                        <p>O "canivete de Damasco" é conhecido por ter uma lâmina feita de aço de Damasco, um tipo de
+                            aço caracterizado por seu
+                            padrão distintivo de camadas e sua alta durabilidade. Esse tipo de aço é famoso por sua
+                            combinação de resistência e
+                            flexibilidade, que resulta em lâminas muito afiadas e duráveis.</p>
+                        <h4>Ideal para:</h4>
+                        <ul>
+                            <li>
+                                <h5>Corte Preciso:</h5> A lâmina de aço de Damasco é excelente para cortes precisos e
+                                duradouros,
+                                o que a torna ideal para
+                                canivetes usados em atividades que exigem alta precisão, como esculpir madeira ou cortar
+                                materiais finos.
+                            </li>
+                            <li>
+                                <h5>Uso em Ambiente Hostil:</h5> Devido à sua durabilidade e resistência à corrosão, um
+                                canivete
+                                de Damasco pode ser útil em
+                                ambientes onde o canivete será exposto a condições adversas.
+                            </li>
+                            <li>
+                                <h5>Colecionadores e Entusiastas:</h5> A beleza estética e a tradição associada ao aço
+                                de Damasco
+                                fazem dele uma escolha popular
+                                entre colecionadores e entusiastas de facas e canivetes.
+                            </li>
+                            <li>
+                                <h5>Tarefas Gerais:</h5> Embora seja altamente valorizado para tarefas específicas, um
+                                canivete
+                                de Damasco também pode ser usado
+                                para tarefas diárias devido à sua robustez e capacidade de manter uma lâmina afiada.
+                            </li>
+                        </ul>
+                        <h3>Valores:</h3>
+                        <h6 class="line-through">R$:2.150,00</h6>
+                        <h6>R$:1.890,00 no Pix</h6>
+                        <h6>R$:1.999,00 no cartão de debito</h6>
+                        <h6>ou até 6x sem juros no cartão de Crédito</h6>
+                        <ion-icon class="icones" name="card-outline"></ion-icon>
+                        <ion-icon class="icones" name="cash-outline"></ion-icon>
+
+                        <h4>Consultar frete e prazo de entrega:</h4>
+                        <form id="freteFormulario" method="get" action="#">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" name="cep" required placeholder="93295-250"
+                                pattern="[0-9]{5}-[0-9]{3}" title="O CEP deve estar no formato 93295-250">
+                            <button type="submit">Calcular Frete</button>
+                        </form>
+
+                        <button type="submit" class="btn-primary">Adicionar ao Carrinho <ion-icon
+                                name="cart-outline"></ion-icon> </button>
+                        <button type="submit" class="btn-primary">Comprar <ion-icon name="bag-check-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="fabricação">
+            <h2 class="section-opcoes">Processo de Fabricação</h2>
+            <div>
+                <figure>
+                    <video class="video" id="video" controls src="video/Produção.mp4"></video>
+                </figure>
+                <div>
+                    <ol> <!-- lista com ordenação-->
+                        <li>
+                            <h3>Etapa 01: Seleção do material</h3>
+                            <p>O processo começa com a escolha dos materiais certos para a faca. Para a lâmina, utilize
+                                um aço de alta qualidade, como aço carbono ou inoxidável, que oferece durabilidade e
+                                resistência. O cabo deve ser de um material robusto e estético, como madeira, micarta ou
+                                G10. A seleção cuidadosa dos materiais impacta diretamente na performance e longevidade
+                                da faca. Materiais de baixa qualidade podem comprometer o desempenho final e a segurança
+                                do usuário. Certifique-se de que todos os componentes se complementem para garantir um
+                                produto de excelência. Investir em bons materiais é essencial para um bom resultado
+                                final. A escolha adequada é a base para a construção de uma faca artesanal de qualidade.
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Etapa 02: Forjamento da Lâmina</h3>
+                            <p>O forjamento da lâmina é um passo crucial na fabricação de facas artesanais. Aqueça o aço
+                                até que fique vermelho-brilhante, o que torna o material mais maleável. Use um martelo e
+                                uma bigorna para moldar a lâmina conforme o design desejado. Esse processo envolve
+                                precisão e habilidade, já que cada golpe deve ser calculado para alcançar a forma certa.
+                                O forjamento deve ser feito com cuidado para evitar defeitos e garantir que a lâmina
+                                tenha a espessura e o formato corretos. Várias etapas de aquecimento e martelamento
+                                podem ser necessárias. A forma inicial da lâmina é estabelecida aqui, e qualquer erro
+                                pode afetar a qualidade final. O forjamento é essencial para criar uma lâmina funcional
+                                e durável.</p>
+                        </li>
+                        <li>
+                            <h3>Etapa 03: Tratamento Térmico</h3>
+                            <p>Após o forjamento, o aço precisa passar pelo tratamento térmico para melhorar suas
+                                propriedades. Aqueça a lâmina até a temperatura crítica e resfrie rapidamente em óleo ou
+                                água para a têmpera, aumentando sua dureza. Em seguida, realize o revenimento, aquecendo
+                                a lâmina a uma temperatura mais baixa e permitindo que esfrie lentamente. Esse processo
+                                reduz a fragilidade e ajusta a dureza da lâmina para um equilíbrio ideal. O tratamento
+                                térmico deve ser preciso para garantir a durabilidade e a resistência da faca. Monitorar
+                                as temperaturas e os tempos é crucial para obter os melhores resultados. Esse passo é
+                                fundamental para a qualidade final e a eficácia do corte. Um tratamento térmico bem
+                                executado assegura uma lâmina robusta e de alto desempenho.</p>
+                        </li>
+                        <li>
+                            <h3>Etapa 04: Desbaste e Afiamento</h3>
+                            <p>Com a lâmina forjada e tratada, o próximo passo é o desbaste e o afiamento. Utilize uma
+                                esmerilhadeira ou lixa para refinar a forma da lâmina e criar o fio de corte. O desbaste
+                                inicial remove excesso de material e ajusta a lâmina à forma desejada. Depois, use
+                                pedras de amolar, começando com uma pedra grossa e progredindo para pedras mais finas,
+                                para afiar o fio da lâmina. Esse processo é essencial para obter um corte preciso e
+                                eficiente. O afinamento final determina a capacidade da faca em cortar e manter o fio. O
+                                cuidado nesse estágio é crucial para garantir a eficácia e o desempenho da faca. Um bom
+                                desbaste e afiamento são vitais para a funcionalidade do produto final.</p>
+                        </li>
+                        <li>
+                            <h3>Etapa 05: Fabricação do Cabo</h3>
+                            <p>Enquanto a lâmina está sendo tratada e finalizada, comece a trabalhar no cabo da faca.
+                                Corte o material do cabo no formato desejado e faça os furos necessários para pinos ou
+                                parafusos que irão fixar a lâmina ao cabo. O material do cabo deve ser escolhido com
+                                cuidado para garantir durabilidade e conforto. Cole e fixe o cabo na lâmina com
+                                precisão, utilizando pinos ou parafusos para assegurar que ele esteja firmemente preso.
+                                A ergonomia do cabo é importante para o uso confortável e seguro da faca. Verifique se o
+                                encaixe é perfeito e se não há movimentos indesejados. A fabricação do cabo completa a
+                                montagem da faca e é crucial para sua funcionalidade e estética. Um cabo bem feito é
+                                fundamental para a usabilidade do produto final.</p>
+                        </li>
+                        <li>
+                            <h3>Etapa 06: Acabamento</h3>
+                            <p>O acabamento é a etapa final do processo de fabricação de facas artesanais. Lixe e polir
+                                a lâmina e o cabo para remover imperfeições e suavizar todas as superfícies. Aplique uma
+                                camada de óleo ou cera para proteção contra corrosão e desgaste. Esse passo melhora não
+                                apenas a aparência, mas também a durabilidade da faca. Um bom acabamento garante que a
+                                faca tenha uma superfície lisa e brilhante, aumentando sua estética e longevidade. Além
+                                disso, a proteção adicional ajuda a manter o estado da faca ao longo do tempo. O
+                                acabamento é a etapa que finaliza o trabalho e deixa a faca pronta para uso. Um cuidado
+                                especial nessa fase assegura um produto de alta qualidade e bem acabado.
+
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="materiais">
+            <h2 class="section-opcoes">Tipos de Materiais:</h2>
+            <div class="Materias-letra">
+                <div>
+                    <h3>Aço damasco</h3>
+                    <img src="img/Material-inox.jpg" alt="Aço Inox">
+                    <p>O aço Damasco é famoso por suas camadas distintas e padrões ondulado. Originário da região de
+                        Damasco, na Síria, é conhecido por sua resistência e
+                        durabilidade. A fabricação envolve a combinação e forjamento de diferentes tipos de aço e ferro,
+                        criando uma estrutura de camadas. Essa técnica resulta em um material com força e flexibilidade
+                        excepcionais. Além da funcionalidade, o aço Damasco é valorizado por sua beleza estética, usado
+                        em facas e espadas. A produção moderna utiliza aço de alta qualidade e processos avançados.</p>
+                </div>
+                <div>
+                    <h3>Aço carbono</h3>
+                    <img src="img/Material-carbono.jpg" alt="Aço Carbono">
+                    <p>O aço carbono é uma liga de ferro com carbono, cuja quantidade define suas propriedades. Usado em
+                        construção e ferramentas, oferece uma boa combinação de dureza e resistência. Aços de baixo
+                        carbono são mais maleáveis e fáceis de trabalhar, enquanto os de alto carbono são mais rígidos e
+                        duráveis. No entanto, o aço carbono pode ser suscetível à corrosão se não for tratado
+                        adequadamente. É amplamente utilizado devido ao seu custo-benefício e versatilidade. Sua
+                        resistência e propriedades dependem da quantidade.</p>
+                </div>
+                <div>
+                    <h3>Aço inox</h3>
+                    <img src="img/barra-damasco.jpg" alt="Aço Damasco">
+                    <p>O aço inox, ou aço inoxidável, é uma liga de ferro com cromo (e às vezes níquel), conferindo
+                        resistência à corrosão e manchas. Ideal para ambientes úmidos e aplicações onde a higiene é
+                        crucial, como utensílios de cozinha e equipamentos médicos. Conhecido por sua durabilidade,
+                        facilidade de manutenção e aparência brilhante, o aço inox é popular em muitos setores. A
+                        combinação de cromo e outros elementos permite que mantenha sua integridade e estética ao longo
+                        do tempo. É uma escolha comum devido à sua resistência e longevidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2 class="section-opcoes">Nossa trajetoria</h2>
+            <div class="Linha-do-Tempo">
+                <div class="Linha-do-Tempo-item">
+                    <div class="Linha-do-Tempo-ano">1920</div>
+                    <div class="Linha-do-Tempo-Conteudo">
+                        <img src="img/Inicio.jpg" alt="Fundação">
+                        <p>Fundação da A.W Facas Artesanais. Início da tradição em cutelaria.</p>
+                    </div>
+                </div>
+                <div class="Linha-do-Tempo-item">
+                    <div class="Linha-do-Tempo-ano">1969</div>
+                    <div class="Linha-do-Tempo-Conteudo">
+                        <img src="img/Fabrica-inicio.jpg" alt="Expansão">
+                        <p>Primeira expansão da fábrica, aumento da capacidade de produção.</p>
+                    </div>
+                </div>
+                <div class="Linha-do-Tempo-item">
+                    <div class="Linha-do-Tempo-ano">2009</div>
+                    <div class="Linha-do-Tempo-Conteudo">
+                        <img src="img/Fabrica.jpeg" alt="Tecnologia">
+                        <p>Introdução de novas tecnologias de fabricação, mantendo a tradição artesanal.</p>
+                    </div>
+                </div>
+                <div class="Linha-do-Tempo-item">
+                    <div class="Linha-do-Tempo-ano">2024</div>
+                    <div class="Linha-do-Tempo-Conteudo">
+                        <img src="img/Final.jpg" alt="Futuro">
+                        <p>Continuação da excelência em cutelaria, com foco em inovação e qualidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2 class="section-opcoes">Depoimentos</h2>
+            <div class="Depoimentos-tabela">
+                <div>
+                    <div class="Depoimento">
+                        <h3>Carlos avila pereira</h3>
+                        <p>“As facas da A.W são excepcionais! A qualidade é incomparável.”</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class="Depoimento">
+                        <h3>Lucas Ferreira</h3>
+                        <p>“Recomendo a todos os colecionadores. Artesanato de primeira!”</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class="Depoimento">
+                        <h3>Ana Oliveira</h3>
+                        <p>“Comprei um canivete e não me arrependo. Excelente fio e durabilidade.”</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class="Depoimento">
+                        <h3>Pedro Costa</h3>
+                        <p>“Serviço de atendimento maravilhoso. Produto entregue rapidamente.”</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class="Depoimento">
+                        <h3>Mariana Silva</h3>
+                        <p>“A A.W superou minhas expectativas. Produtos incríveis e de ótima qualidade!”</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                    </div>
+                </div>
+                <div>
+                    <div class="Depoimento">
+                        <h3>Gabriel Almeida</h3>
+                        <p>“Comprei uma faca para presente e a pessoa adorou. Muito bem feita.”</p>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2 class="section-opcoes">Contato</h2>
+            <form class="Contatos-formulario">
+                <fieldset> <!--Elemento para separação visual de componentes -->
+                    <legend>Encomende sua faca personalizada</legend>
+                    <p>Observação: Retorno de 2 a 3 dias úteis, por favor aguarde.</p>
+                    <div>
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div>
+                        <label for="empresa" class="form-label">Empresa: (opcional)</label>
+                        <input type="text" class="form-control" id="empresa">
+                    </div>
+                    <div>
+                        <label for="endereco" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" required>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="awfacasartesanais@gmail.com"
+                            required>
+                    </div>
+                    <div>
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="(51) 99772-1371"
+                            pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                    </div>
+                    <div>
+                        <label for="material" class="form-label">Material:</label>
+                        <select class="form-select" id="material" required>
+                            <option value="">Selecione</option>
+                            <option value="damasco">Damasco</option>
+                            <option value="inox">Inox</option>
+                            <option value="carbono">Carbono</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tipo-faca" class="form-label">Tipo:</label>
+                        <select class="form-select" id="tipo-faca" required>
+                            <option value="">Selecione</option>
+                            <option value="faca">Faca</option>
+                            <option value="facao">Facão</option>
+                            <option value="canivete">Canivete</option>
+                            <option value="espada">Espada</option>
+                            <option value="cutelo">Cutelo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem"
+                            placeholder="Digite sua mensagem aqui..."></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-primary">Enviar</button>
+                        <button type="reset" class="btn-primary">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="endereco-final">
+                <h3>Nosso endereço:</h3>
+                <address>
+                    <p>Endereço: Santa Maria do Herval, 3081, Rio Grande do Sul</p>
+                    <p>Cep: 93995-220</p>
+                    <p>Email: awfacasartesanais@gmail.com</p>
+                    <p>Telefone: (51) 99772-1372</p>
+                </address>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="redes">
+            <ul>
+                <li><a href="https://web.whatsapp.com/" target="_blank"><ion-icon class="redes-sociais"
+                            name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><ion-icon class="redes-sociais"
+                            name="logo-instagram"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><ion-icon class="redes-sociais"
+                            name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://x.com/?lang=pt-br" target="_blank"><ion-icon class="redes-sociais"
+                            name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </nav>
+        <section class="Contato-informacoes">
+            <h3>Contatos:</h3>
+            <p><ion-icon name="logo-whatsapp" class="icone-contato"></ion-icon>Telefone: (51) 99772-1372</p>
+            <p><ion-icon name="mail-outline" class="icone-contato"></ion-icon>Email: awfacasartesanais@gmail.com</p>
+            <p><ion-icon name="location-outline" class="icone-contato"></ion-icon>Endereço: Santa Maria do Herval, 3081,
+                Rio Grande do Sul</p>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1721523380586!6m8!1m7!1sWL9zvHFRcNe03B5xxWITqw!2m2!1d-29.49721577799551!2d-50.99051552026692!3f329.01!4f14.329999999999998!5f0.4000000000000002"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="copy">&copy; 2024 A.W Facas Artesanais. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
