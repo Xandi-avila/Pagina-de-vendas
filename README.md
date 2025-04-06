@@ -4,7 +4,7 @@ Este é um projeto simples de uma **página de vendas de facas artesanais**, des
 
 ## 🖥️ Visualização online
 
-🔗 [Clique aqui para acessar o site ao vivo](https://e-commerce-facas.vercel.app/)
+🔗 [Clique aqui para acessar o site](https://e-commerce-facas.vercel.app/)
 
 ## 🚀 Tecnologias utilizadas
 
