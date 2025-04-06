@@ -11,7 +11,7 @@ Este é um projeto simples de uma **página de vendas de facas artesanais**, des
 - HTML5
 - CSS3
 
-## 🧪 Funcionalidades e estrutura
+## 🔧 Funcionalidades e estrutura
 
 - Página inicial com destaque para produtos
 - Seção de apresentação com texto e chamada para ação
